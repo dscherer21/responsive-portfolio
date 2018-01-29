@@ -8,7 +8,9 @@ body {
 
     background: url('http://lorempixel.com/output/abstract-q-c-640-480-2.jpg');
 
-    background-size: 100%;
+    background-size: cover;
+
+    background-repeat: no-repeat;
 
     font-size: 18px;
 
@@ -188,6 +190,8 @@ nav a:first-child {
 
     margin-top: 10px;
 
+    border: 1px solid black;
+
     float: left;
 
     margin-right: 25px;
@@ -195,6 +199,12 @@ nav a:first-child {
 }
 
 /* sidebar */
+aside {
+
+    border-radius: 10px;
+
+}
+
 .sidebar {
 
     background: #fff;
@@ -385,3 +395,42 @@ input[type=submit] {
     clear: both;
     display: table;
 }
+
+/*980px screen*/
+@media screen and (min-width: 768px) and (max-width: 980px) {
+
+    .auth-image {
+        width: 600px;
+    }
+
+    .work{
+        float: none;
+        width: 574px;
+    }
+
+
+}
+
+/*768px screen*/
+@media screen and (min-width: 640px) and (max-width: 768px) {
+
+    .main-section {
+        float: none;
+    }
+
+    .auth-image {
+        width: 40%;
+    }
+
+    .sidebar {
+        float: initial;
+        background: purple;
+    }
+
+}
+
+/*640px screen
+@media screen and (min-width: 640px) and (max-width: 768px) {
+
+
+}*/
